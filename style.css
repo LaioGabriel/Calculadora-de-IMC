@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background-color: #040924;
+    font-size: 1.6rem;
+    color: #0C3440;
+    font-family: "Roboto", sans-serif;
+}
+.card{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem ;
+    background-color: white;
+    max-width: 42.8rem;
+    margin-inline: auto;
+    border-radius: .6rem;
+    margin-top: 16rem;
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    font-size: 1.6rem;
+}
+legend{
+    font-size: 2rem;
+    font-weight: bold;
+    font-size: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+.input_cel{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input{
+    padding: 1.6rem;
+    background-color: #DCE2E9;
+    border: 1px solid #acaeb1;
+    border-radius: .4rem;
+    cursor: pointer;
+    outline: 1px solid  #0C3440;
+    font-family: "Roboto", sans-serif;
+    color: #747577;
+}
+#calc_button{
+    padding: 1.6rem 9.1rem 1.6rem 9.1rem;
+    width: 100%;
+    align-items: center;
+    color: white;
+    background-color: #02799D;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: .6rem;
+    margin-top: 3.2rem;
+    transition: 2s;
+    cursor: pointer;
+}
+#calc_button:hover{
+    background-color: #022d3a;
+}
+.modal-wrapper{
+position: absolute;
+inset: 0;
+background-color: rgba(0, 0, 0, 0.7) ;
+visibility:hidden;
+}
+.modal-wrapper.open{
+    visibility: visible;
+}
+.modal h2{
+    text-align: center;
+    font-size: 2.4rem;
+}
+.modal{
+    position: relative;
+}
+#close{
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top:1.6rem;
+    right:1.6rem;
+    transition: 2s;
+}
+#close:hover{
+    transform: scale(1.2);
+}
+#alert_error{
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 2, 2, 0.747);
+    color: white;
+    text-align: center;
+    padding: .5rem 100% .5rem 100%;
+}
+#alert_error p{
+    color: white;
+}
