@@ -42,14 +42,7 @@ if(result<17){
 }
 
 function calcIMC(weight,height){
-if(height>3){
     return(weight/ (height/100)**2).toFixed(2)
-}else{
-    alert('Insira o valor em centímetros')
-}
-        
-   
-
 }
 closeBtn.onclick=()=>{
 modalWrapper.classList.remove('open')
