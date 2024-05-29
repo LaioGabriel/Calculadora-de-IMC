@@ -35,7 +35,7 @@ if(result<17){
      procure atendimento médico`;
 }else if(result>40){
     `Seu IMC é de: ${result}, Seu quadro é de obesidade 3
-     procure atendimento médico urgente`;
+     procure atendimento médico assim que possível`;
   
 }
 
